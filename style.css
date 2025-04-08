@@ -1,0 +1,16 @@
+#gr {
+    padding-top: 15%;
+}
+body {
+    background-image: url(imgs/track.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#gr2 {
+    padding-top: 15%;
+}
+#buttonhova:hover {
+    background-color: white;
+    box-shadow: 10px 10px 10px white;
+    color: black;
+}
