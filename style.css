@@ -9,8 +9,106 @@ body {
 #gr2 {
     padding-top: 15%;
 }
+#buttonhova {
+    color: white;
+}
 #buttonhova:hover {
     background-color: white;
-    box-shadow: 10px 10px 10px white;
+    box-shadow: 0px 0px 10px white;
     color: black;
 }
+  /* Left button */
+
+  #buttonhova2 {
+    color: white;
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+}
+#buttonhova2:hover {
+    background-color: white;
+    box-shadow: 0px 0px 10px white;
+    color: black;
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+}
+#buttonhova2.clicked {
+    background-color: white;
+    box-shadow: 0px 0px 10px white;
+    color: black;
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+ }
+  /* Middle button */
+
+ #buttonhova3 {
+    color: white;
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+}
+#buttonhova3:hover {
+    background-color: white;
+    box-shadow: 0px 0px 10px white;
+    color: black;
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+}
+#buttonhova3.clicked {
+    background-color: white;
+    box-shadow: 0px 0px 10px white;
+    color: black;
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+ }
+ /* right button */
+ #buttonhova4 {
+    color: white;
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+}
+#buttonhova4:hover {
+    background-color: white;
+    box-shadow: 0px 0px 10px white;
+    color: black;
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+}
+#buttonhova4.clicked {
+    background-color: white;
+    box-shadow: 0px 0px 10px white;
+    color: black;
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+ }
+ .in-n-out {
+    animation: inOutAnimation 3s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes inOutAnimation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(2); 
+    }
+    100% {
+      transform: scale(1); 
+    }
+  }

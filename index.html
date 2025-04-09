@@ -30,13 +30,57 @@
             </div>
         </header>
         <main>
-            <div class="container">
+            <div class="container py-5">
                 <div class="row" id="gr2">
-                    <div class="bg-secondary text-white text-center py-5">
-                        <h1 class="btn border border-light text-light" id="buttonhova">Lets find You're Splits!</h1>
+                    <div class="bg-secondary text-center py-5">
+                        <h1 class="btn border border-light" id="buttonhova">Lets find You're Splits!</h1>
                     </div>
                 </div>
             </div>
+           <!-- Carousel Container -->
+<div id="eventCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      
+      <!-- Single Slide with Your Buttons -->
+      <div class="carousel-item active">
+        <section class="bg-dark bg-opacity-25 events-categories text-center py-5">
+          <div class="container">
+            <h2 class="text-light mb-4">
+              <u id="chooseYourEvent">Choose Your Event</u>
+            </h2>
+            <div class="row py-5 justify-content-center">
+              <div class="col-md-4">
+                <div id="buttonhova2" onclick="toggle()" class="btn border border-light text-decoration-none">
+                  800m
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div id="buttonhova3" onclick="toggle2()" class="btn border border-light text-decoration-none">
+                  1600m
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div id="buttonhova4" onclick="toggle3()" class="btn border border-light text-decoration-none">
+                  3200m
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+  
+      <!-- Add more carousel-item divs here if you want more pages -->
+  
+    </div>
+  
+    <!-- Carousel controls (optional) -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#eventCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#eventCarousel" data-bs-slide="next">
+      <span id="icon" class="carousel-control-next-icon"></span>
+    </button>
+  </div>
         </main>
         <footer>
             <!-- place footer here -->
