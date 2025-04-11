@@ -28,3 +28,31 @@ function toggle3() {
     let choice = 3200
     icon.classList.add('in-n-out');
 }
+let timeInput = document.getElementById('timeInput')
+function inputedTime() {
+    if(choice === '800m') {
+        difficultyBox.classList.add('easy')
+        difficultyBox.innerText = 'Difficulty: Easy 🥱'
+        document.getElementById('og-stick-man').classList.add('d-none')
+        document.getElementById('shamrock').classList.remove('d-none')
+        document.getElementById('adjust').classList.add('adjust')
+    } else if(level === '1600m') {
+        difficultyBox.classList.add('medium')
+        difficultyBox.innerText = 'Difficulty: Medium 😐'
+        document.getElementById('og-stick-man').classList.add('d-none')
+        document.getElementById('shamrock').classList.remove('d-none')
+        document.getElementById('adjust').classList.add('adjust')
+    } else if(level === '3200m') {
+        difficultyBox.classList.add('hard')
+        difficultyBox.innerText = 'Difficulty: Hard 🫠'
+        document.getElementById('og-stick-man').classList.add('d-none')
+        document.getElementById('shamrock').classList.remove('d-none')
+        document.getElementById('adjust').classList.add('adjust')
+    }
+}
+
+function inputedTime() {
+    let inputField = document.getElementById('timeInput') 
+
+    
+    }

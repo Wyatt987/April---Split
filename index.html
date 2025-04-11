@@ -38,7 +38,7 @@
                 </div>
             </div>
            <!-- Carousel Container -->
-<div id="eventCarousel" class="carousel slide" data-bs-ride="carousel">
+<div id="eventCarousel" class="carousel slide" data-ride="false" data-pause="true">
     <div class="carousel-inner">
       
       <!-- Single Slide with Your Buttons -->
@@ -67,39 +67,24 @@
             </div>
           </div>
         </section>
-      </div>
-  
-      <div class="carousel-inner">
-      
+      </div>     
+      <div class="carousel-item bg-dark bg-opacity-25 py-5"> 
         <!-- Single Slide with Your Buttons -->
-        <div class="carousel-item active">
-          <section class="bg-dark bg-opacity-25 events-categories text-center py-5">
-            <div class="container">
-              <h2 class="text-light mb-4">
-                <u id="chooseYourEvent">Choose Your Event</u>
-              </h2>
-              <div class="row py-5 justify-content-center">
-                <div class="col-md-4">
-                  <div id="buttonhova2" onclick="toggle()" class="btn border border-light text-decoration-none">
-                    800m
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div id="buttonhova3" onclick="toggle2()" class="btn border border-light text-decoration-none">
-                    1600m
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div id="buttonhova4" onclick="toggle3()" class="btn border border-light text-decoration-none">
-                    3200m
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+         <div class="container">
+         <div class="row">
+          <div class="col-6 d-flex justify-content-center ps-3">
+            <div class="text-light fs-1">What Time are You trying to hit?</div>
+          </div>
+          <div class="d-flex col-6 d-flex ps-3">
+        <input type="text" id="timeInput" maxlength="1" class="form-control d-inline-block w-auto text-center border-primary" placeholder="minutes">
+        <input type="text" id="timeInput" maxlength="2" class="form-control d-inline-block w-auto text-center border-primary" placeholder="seconds">
+        <button id="guessBtn" class="btn btn-warning ms-2" onclick="inputedTime()">Find</button>
         </div>
+          </div>
+        </div>
+         </div>
+
       <!-- Add more carousel-item divs here if you want more pages -->
-  
     </div>
   
     <!-- Carousel controls (optional) -->
@@ -110,6 +95,35 @@
       <span id="icon" class="carousel-control-next-icon"></span>
     </button>
   </div>
+  <!--800m splits-->
+    <div class="row py-5" id="800mSplits">
+      <div class="col-3 text-center">
+          <h2 class="text-light" id="800m200"></h2>
+      </div>
+      <div class="col-3 text-center">
+        <h2 class="text-light" id="800m400"></h2>
+      </div>
+    <div class="col-3 text-center">
+        <h2 class="text-light" id="800m600"></h2>
+     </div>
+      <div class="col-3 text-center">
+      <h2 class="text-light" id="800m800"></h2>
+      </div>
+    </div>
+    <div class="row py-5" id="800mSplits">
+      <div class="col-3 text-center">
+          <h2 class="text-light">200m</h2>
+      </div>
+      <div class="col-3 text-center">
+        <h2 class="text-light">400m</h2>
+      </div>
+    <div class="col-3 text-center">
+        <h2 class="text-light">600m</h2>
+     </div>
+      <div class="col-3 text-center">
+      <h2 class="text-light">800m</h2>
+      </div>
+    </div>
         </main>
         <footer>
             <!-- place footer here -->
