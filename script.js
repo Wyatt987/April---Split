@@ -5,12 +5,19 @@ let choice = null
 let eightSplits = document.getElementById('800mSplits')
 let eightSplits2 = document.getElementById('800mSplits2')
 let eightSplits3 = document.getElementById('800mSplits3')
+let eightSplits4 = document.getElementById('800mSplits4')
+let eightSplits5 = document.getElementById('800mSplits5')
 let mileSplits = document.getElementById('mileSplits')
 let mileSplits2 = document.getElementById('mileSplits2')
 let mileSplits3 = document.getElementById('mileSplits3')
+let mileSplits4 = document.getElementById('mileSplits4')
+let mileSplits5 = document.getElementById('mileSplits5')
+
 let twoMileSplits = document.getElementById('twoMileSplits')
 let twoMileSplits2 = document.getElementById('twoMileSplits2')
 let twoMileSplits3 = document.getElementById('twoMileSplits3')
+let twoMileSplits4 = document.getElementById('twoMileSplits4')
+let twoMileSplits5 = document.getElementById('twoMileSplits5')
 
 function toggle() {
     buttonhova2.classList.toggle('clicked')
@@ -82,6 +89,9 @@ function displaySplits800() {
     eightSplits.classList.remove('d-none')
     eightSplits2.classList.remove('d-none')
     eightSplits3.classList.remove('d-none')
+    eightSplits4.classList.remove('d-none')
+    eightSplits5.classList.remove('d-none')
+
 }
 
 function resetButton800() {
@@ -89,6 +99,8 @@ function resetButton800() {
     eightSplits.classList.add('d-none')
     eightSplits2.classList.add('d-none')
     eightSplits3.classList.add('d-none')
+    eightSplits4.classList.add('d-none')
+    eightSplits5.classList.add('d-none')
     totalTime = 0;
 
 }
@@ -123,6 +135,9 @@ function displaySplits1600() {
     mileSplits.classList.remove('d-none')
     mileSplits2.classList.remove('d-none')
     mileSplits3.classList.remove('d-none')
+    mileSplits4.classList.remove('d-none')
+    mileSplits5.classList.remove('d-none')
+
 }
 
 function resetButton1600() {
@@ -130,6 +145,9 @@ function resetButton1600() {
     mileSplits.classList.add('d-none')
     mileSplits2.classList.add('d-none')
     mileSplits3.classList.add('d-none')
+    mileSplits4.classList.add('d-none')
+    mileSplits5.classList.add('d-none')
+
     totalTime = 0;
 }
 
@@ -163,6 +181,8 @@ function displaySplits3200() {
     twoMileSplits.classList.remove('d-none')
     twoMileSplits2.classList.remove('d-none')
     twoMileSplits3.classList.remove('d-none')
+    twoMileSplits4.classList.remove('d-none')
+    twoMileSplits5.classList.remove('d-none')
 }
 
 function resetButton3200() {
@@ -170,5 +190,7 @@ function resetButton3200() {
     twoMileSplits.classList.add('d-none')
     twoMileSplits2.classList.add('d-none')
     twoMileSplits3.classList.add('d-none')
+    twoMileSplits4.classList.add('d-none')
+    twoMileSplits5.classList.add('d-none')
     totalTime = 0;
 }

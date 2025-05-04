@@ -26,16 +26,18 @@
     <body>
         <header>
             <div class="container">
-                <div class="row" id="gr">
+                <div class="row">
                     <div class="col-3 text-center">
                         <h1 class="text-white text-center py-5" id="font">Lets find You're Splits!</h1>
                     </div>
                     <div class="col-2"></div>
-                    <div class="col-6">
+                    <div class="col-4 d-none d-sm-block">
                       <img src="imgs/bubble-removebg-preview.png" class="img-fluid" id="bubble">
                     </div>
-
-                    <div class="col-1"></div>
+                    <!--Small screens-->
+                    <div class="col-6 d-md-none">
+                      <img src="imgs/bubble-removebg-preview.png" class="w-100 h-100" id="bubble">
+                    </div>
                 </div>
             </div>
         </header>
@@ -43,12 +45,12 @@
             <div class="container py-5">
                 <div class="row" id="gr2">
                     <div class="text-center py-5">
-                        <h1 class="btn border border-light" id="buttonhova"><a class="text-decoration-none text-light" id="change" href="#buttonhova2">Let's Go</a></h1>
+                      <a class="text-decoration-none" id="change" href="#chooseYourEvent"><h1 class="btn border h-100 w-75 border-light fs-3" id="buttonhova">Let's Go</h1></a>
                     </div>
                 </div>
             </div>
            <!-- Carousel Container -->
-<div id="eventCarousel" class="carousel slide py-5" data-ride="false" data-pause="true">
+<div id="eventCarousel" class="carousel slide py-5 d-none d-sm-block" data-ride="false" data-pause="true">
     <div class="carousel-inner">
       
       <!-- Single Slide with Your Buttons -->
@@ -78,7 +80,7 @@
           </div>
         </section>
       </div>     
-      <div class="carousel-item bg-dark bg-opacity-25 py-5"> 
+      <div class="carousel-item bg-dark bg-opacity-25 py-5" id="scrol"> 
         <!-- Single Slide with Your Buttons -->
          <div class="container">
          <div class="row">
@@ -93,10 +95,8 @@
           </div>
         </div>
          </div>
-
     </div>
-  
-    <!-- Carousel controls (optional) -->
+    <!-- Carousel controls-->
     <button class="carousel-control-prev" type="button" data-bs-target="#eventCarousel" data-bs-slide="prev">
       <span class="carousel-control-prev-icon"></span>
     </button>
@@ -104,8 +104,51 @@
       <span id="icon" class="carousel-control-next-icon"></span>
     </button>
   </div>
+<!--Small screens-->
+  <section class="bg-dark bg-opacity-25 events-categories text-center py-5 d-md-none">
+    <div class="container">
+      <h2 class="text-light mb-4">
+        <u id="chooseYourEvent">Choose Your Event</u>
+      </h2>
+      <div class="row py-5 justify-content-center">
+        <div class="col-md-4">
+          <div id="buttonhova2" onclick="toggle()" class="btn border border-light text-decoration-none">
+            800m
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div id="buttonhova3" onclick="toggle2()" class="btn border border-light text-decoration-none">
+            1600m
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div id="buttonhova4" onclick="toggle3()" class="btn border border-light text-decoration-none">
+            3200m
+          </div>
+        </div>
+      </div>
+    <div class="row">
+     <div class="col-12 d-flex justify-content-center ps-3">
+       <div class="text-light fs-1">What Time are You trying to hit?</div>
+     </div>
+     <div class="row">
+      <div class="col-12">
+        <div class="d-flex col-lg-6 col-md-12 d-flex pts-3">
+          <input type="text" id="timeInputM" maxlength="2" class="form-control d-inline-block w-auto text-center border-primary" placeholder="minutes">
+          <input type="text" id="timeInputS" maxlength="2" class="form-control d-inline-block w-auto text-center border-primary" placeholder="seconds">
+          </div>
+      </div>
+      <div class="row">
+        <div class="col-12 py-3">
+      <button id="guessBtn" class="btn btn-warning w-100 ms-2 " onclick="inputedTime()">Find</button>
+          </div>
+          </div>
+     </div>
+     </div>
+     </div>
+    </section>
   <!--800m splits-->
-    <div class="row py-5 d-none" id="800mSplits">
+    <div class="row py-5 d-none bg-dark bg-opacity-25" id="800mSplits">
       <div class="col-3 text-center">
           <h2 class="text-light" id="800m200"></h2>
       </div>
@@ -119,7 +162,7 @@
       <h2 class="text-light" id="800m800"></h2>
       </div>
     </div>
-    <div class="row py-5 d-none" id="800mSplits2">
+    <div class="row py-5 d-none bg-dark bg-opacity-25" id="800mSplits2">
       <div class="col-3 text-center">
           <h2 class="text-light">200m</h2>
       </div>
@@ -133,15 +176,34 @@
       <h2 class="text-light">800m</h2>
       </div>
     </div>
-    <div class="container d-none"  id="800mSplits3">
+    <!--Info Section-->
+    <div class="container py-5 bg-dark bg-opacity-25 d-none" id="800mSplits3">
       <div class="row">
-        <div class="col-12 text-center">
-          <button id="ResetButton" class="btn btn-warning ms-2" onclick="resetButton800()">Restart</button>
+        <div class="col-12 d-flex justify-content-center text-light">
+          <h1>How to Run the 800</h1>
+        </div>
+      </div>
+    </div>
+    <div class="container py-5 bg-dark bg-opacity-25 d-none" id="800mSplits4">
+      <div class="row">
+        <div class="col-6 d-flex text-center text-light">
+          <h3>The 800m race is a demanding combination of speed and endurance, often referred to as a "sprint with a distance." To run it effectively, you should start strong but controlled, aiming for a fast pace in the first 200 meters without going all-out. Once you hit the 400m mark, focus on settling into a steady rhythm while conserving energy for the final push. The middle portion of the race is crucial, as you’ll need to maintain your pace and stay mentally focused. As you approach the final 200 meters, prepare for a surge of energy and push yourself into a sprint. This last stretch will require all your remaining strength, so a strong finishing kick can help you pass competitors and end the race on a high note. Proper training, including interval work and pace practice, is essential to mastering the 800m.          </h3>
+        </div>
+        <div class="col-6 d-flex align-items-center">
+          <img src="imgs/800m.jpg" class="img-fluid w-100">
+        </div>
+      </div>
+    </div>   
+    <!--Restart button-->
+    <div class="container d-none"  id="800mSplits5">
+      <div class="row">
+        <div class="col-12 text-center py-5">
+          <button id="ResetButton" class="btn btn-warning ms-2 w-75 h-100" onclick="resetButton800()">Restart</button>
         </div>
       </div>
     </div>
     <!--1600m Splits-->
-    <div class="row py-5 d-none" id="mileSplits">
+    <div class="row py-5 d-none bg-dark bg-opacity-25" id="mileSplits">
       <div class="col-3 text-center">
           <h2 class="text-light" id="1600m400"></h2>
       </div>
@@ -155,7 +217,7 @@
       <h2 class="text-light" id="1600m1600"></h2>
       </div>
     </div>
-    <div class="row py-5 d-none" id="mileSplits2">
+    <div class="row py-5 d-none bg-dark bg-opacity-25" id="mileSplits2">
       <div class="col-3 text-center">
           <h2 class="text-light">400m</h2>
       </div>
@@ -169,15 +231,34 @@
       <h2 class="text-light">1600m</h2>
       </div>
     </div>
-    <div class="container d-none"  id="mileSplits3">
+        <!--Info section-->
+    <div class="container py-5 bg-dark bg-opacity-25 d-none" id="mileSplits3">
+      <div class="row">
+        <div class="col-12 d-flex justify-content-center text-light">
+          <h1>How to Run the 1600</h1>
+        </div>
+      </div>
+    </div>
+    <div class="container py-5 bg-dark bg-opacity-25 d-none" id="mileSplits4">
+      <div class="row">
+        <div class="col-6 d-flex align-items-center">
+          <img src="imgs/1600m.jpg" class="img-fluid w-100">
+        </div>
+        <div class="col-6 d-flex text-center text-light">
+          <h3>Running the 1600m race requires a combination of speed, endurance, and smart pacing. At the start, you should get out strong but controlled—avoid sprinting the first lap, as it can lead to early fatigue. Settle into a consistent pace by the second lap, staying relaxed and focused while maintaining contact with the lead pack if you're racing competitively. The third lap is often the most mentally challenging, so stay disciplined and prepare to push through any signs of fatigue. In the final lap, begin to gradually increase your effort and then unleash your finishing kick with 200 to 300 meters to go. Strong aerobic conditioning, interval training, and race-pace workouts will help prepare you for the demands of the 1600m.</h3>
+        </div>
+      </div>
+    </div>    
+    <!--Restart button-->
+    <div class="container d-none"  id="mileSplits5">
       <div class="row">
         <div class="col-12 py-5 text-center">
-          <button id="ResetButton" class="btn btn-warning ms-2" onclick="resetButton1600()">Restart</button>
+          <button id="ResetButton" class="btn btn-warning ms-2 h-100 w-75" onclick="resetButton1600()">Restart</button>
         </div>
       </div>
     </div>
     <!--3200m Splits-->
-    <div class="row py-5 d-none" id="twoMileSplits">
+    <div class="row py-5 d-none bg-dark bg-opacity-25" id="twoMileSplits">
       <div class="col-3 text-center">
           <h2 class="text-light" id="3200m800"></h2>
       </div>
@@ -191,7 +272,7 @@
       <h2 class="text-light" id="3200m3200"></h2>
       </div>
     </div>
-    <div class="row py-5 d-none" id="twoMileSplits2">
+    <div class="row py-5 d-none bg-dark bg-opacity-25" id="twoMileSplits2">
       <div class="col-3 text-center">
           <h2 class="text-light">800m</h2>
       </div>
@@ -205,10 +286,27 @@
       <h2 class="text-light">3200m</h2>
       </div>
     </div>
-    <div class="container d-none"  id="twoMileSplits3">
+    <div class="container py-5 bg-dark bg-opacity-25 d-none" id="twoMileSplits3">
       <div class="row">
-        <div class="col-12 text-center">
-          <button id="ResetButton" class="btn btn-warning ms-2" onclick="resetButton3200()">Restart</button>
+        <div class="col-12 d-flex justify-content-center text-light">
+          <h1>How to Run the 3200</h1>
+        </div>
+      </div>
+    </div>
+    <div class="container py-5 bg-dark bg-opacity-25 d-none" id="twoMileSplits4">
+      <div class="row">
+        <div class="col-6 d-flex text-center text-light">
+          <h3>To run the 3200m race effectively, you need a combination of endurance, pacing, and mental toughness. Start the race at a controlled pace—fast enough to stay competitive but not so fast that you burn out early. Settle into a steady rhythm by the second lap and focus on maintaining even splits through the middle laps, which are often the most mentally challenging. In the final 800 meters, begin to gradually increase your effort, and with 400 meters left, give a strong finishing kick if you have energy left. Consistent training that includes tempo runs, intervals, and long runs will prepare your body, while practicing mental focus will help you push through fatigue during the race.        </h3>
+        </div>
+        <div class="col-6 d-flex align-items-center">
+          <img src="imgs/clayton_anatomy.jpg">
+        </div>
+      </div>
+    </div>
+    <div class="container d-none" id="twoMileSplits5">
+      <div class="row">
+        <div class="col-12 text-center py-5">
+          <button id="ResetButton" class="btn btn-warning ms-2 w-75 h-100" onclick="resetButton3200()">Restart</button>
         </div>
       </div>
     </div>
