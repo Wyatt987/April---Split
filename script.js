@@ -12,7 +12,6 @@ let mileSplits2 = document.getElementById('mileSplits2')
 let mileSplits3 = document.getElementById('mileSplits3')
 let mileSplits4 = document.getElementById('mileSplits4')
 let mileSplits5 = document.getElementById('mileSplits5')
-
 let twoMileSplits = document.getElementById('twoMileSplits')
 let twoMileSplits2 = document.getElementById('twoMileSplits2')
 let twoMileSplits3 = document.getElementById('twoMileSplits3')
