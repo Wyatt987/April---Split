@@ -18,6 +18,27 @@ let twoMileSplits3 = document.getElementById('twoMileSplits3')
 let twoMileSplits4 = document.getElementById('twoMileSplits4')
 let twoMileSplits5 = document.getElementById('twoMileSplits5')
 
+const trackWordGen = [
+    "Starting Line",
+    "Sprint Zone",
+    "Finish Line",
+    "Relay Exchange",
+    "Track Curve",
+    "Lane Markers",
+    "Hurdle Hop",
+    "Speed Boost",
+    "Lap Counter",
+    "False Start",
+    "Photo Finish",
+    "Cleat Grip",
+    "Track Surface",
+    "Pace Setter",
+    "Race Clock",
+    "Whistle Blow",
+    "Podium Stand",
+    "Victory Lap"
+  ];
+
 function toggle() {
     buttonhova2.classList.toggle('clicked')
     console.log('800m')
